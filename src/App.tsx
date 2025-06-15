@@ -85,7 +85,7 @@ function SceneWrapper() {
 function App() {
 	return (
 		<CameraProvider>
-			<Router>
+			<Router basename="/bg-project">
 				<Routes>
 					<Route
 						path="/"
