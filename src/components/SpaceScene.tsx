@@ -13,17 +13,17 @@ import { artworksWithZ } from "../data/artworks";
 
 // List of planet textures
 const planetTextures = [
-	"/images/mars.jpg",
-	"/images/jupiter.jpg",
-	"/images/saturn.jpg",
-	"/images/venus.jpg",
-	"/images/mercury.jpg",
-	"/images/neptune.jpg",
-	"/images/uranus.jpg",
-	"/images/ceres.jpg",
-	"/images/haumea.jpg",
-	"/images/makemake.jpg",
-	"/images/eris.jpg",
+	"/bg-project/images/mars.jpg",
+	"/bg-project/images/jupiter.jpg",
+	"/bg-project/images/saturn.jpg",
+	"/bg-project/images/venus.jpg",
+	"/bg-project/images/mercury.jpg",
+	"/bg-project/images/neptune.jpg",
+	"/bg-project/images/uranus.jpg",
+	"/bg-project/images/ceres.jpg",
+	"/bg-project/images/haumea.jpg",
+	"/bg-project/images/makemake.jpg",
+	"/bg-project/images/eris.jpg",
 ];
 
 // Create a grid helper for better spatial orientation
@@ -255,7 +255,7 @@ function CelestialBody({
 
 // Replace the Nebula component with StarsBackground
 function StarsBackground() {
-	const starsTexture = useTexture("/images/stars_milky_way.jpg");
+	const starsTexture = useTexture("/bg-project/images/stars_milky_way.jpg");
 	return (
 		<Sphere args={[200, 32, 32]}>
 			<meshBasicMaterial
