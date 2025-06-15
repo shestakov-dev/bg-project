@@ -1,0 +1,42 @@
+{
+	"name": "bg-project",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "eslint .",
+		"preview": "vite preview",
+		"deploy": "gh-pages -d dist"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.14.0",
+		"@emotion/styled": "^11.14.0",
+		"@react-three/drei": "^10.1.2",
+		"@react-three/fiber": "^9.1.2",
+		"@types/styled-components": "^5.1.34",
+		"@types/three": "^0.177.0",
+		"framer-motion": "^12.16.0",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"react-router-dom": "^7.6.2",
+		"styled-components": "^6.1.19",
+		"three": "^0.177.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.25.0",
+		"@types/react": "^19.1.2",
+		"@types/react-dom": "^19.1.2",
+		"@vitejs/plugin-react": "^4.4.1",
+		"eslint": "^9.25.0",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"eslint-plugin-react-refresh": "^0.4.19",
+		"gh-pages": "^6.3.0",
+		"globals": "^16.0.0",
+		"typescript": "~5.8.3",
+		"typescript-eslint": "^8.30.1",
+		"vite": "^6.3.5"
+	},
+	"packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
+}
