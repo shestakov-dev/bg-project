@@ -10,6 +10,19 @@ const Container = styled.div`
 	position: relative;
 `;
 
+const CursorHint = styled.div`
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	font-size: 0.9rem;
+	z-index: 1000;
+`;
+
 const BackButton = styled(motion.button)`
 	position: fixed;
 	top: 20px;
@@ -33,6 +46,7 @@ const BackButton = styled(motion.button)`
 const Title = styled(motion.h1)`
 	font-size: 2.5rem;
 	margin-bottom: 2rem;
+	margin-top: 3rem;
 	text-align: center;
 `;
 
@@ -51,6 +65,9 @@ export default function AboutPage() {
 
 	return (
 		<Container>
+			<CursorHint>
+				Ако курсорът не се вижда, натиснете <b>Esc</b>
+			</CursorHint>
 			<BackButton
 				initial={{ opacity: 0, x: -20 }}
 				animate={{ opacity: 1, x: 0 }}
@@ -86,22 +103,23 @@ export default function AboutPage() {
 					</p>
 					<ul>
 						<li>
-							<strong>X-ос:</strong> Отношение към чуждото
+							<strong>X ос:</strong> Отношение към чуждото
 							<br />← отрицателно | положително →
 							<br />
-							–50 = пълна враждебност | +50 = пълно приемане/любопитство.
+							-50 = пълна враждебност | +50 = пълно приемане/любопитство
 						</li>
 						<li>
-							<strong>Y-ос:</strong> Отношение към родното
+							<strong>Y ос:</strong> Отношение към родното
 							<br />← отрицание / срам | принадлежност / гордост →
 							<br />
-							–50 = силен срам или отричане | +50 = силна гордост и идентификация.
+							-50 = силен срам или отричане | +50 = силна гордост и идентификация
 						</li>
 						<li>
-							<strong>Z-ос:</strong> Исторически период
+							<strong>Z ос:</strong> Исторически период (спрямо произведениета в
+							проекта)
 							<br />← минало изкуство | съвременно изкуство →
 							<br />
-							–50 = най-старо произведение в списъка | +50 = най-ново произведение в
+							-50 = най-старо произведение в списъка | +50 = най-ново произведение в
 							списъка
 						</li>
 					</ul>
